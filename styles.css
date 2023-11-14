@@ -1,0 +1,104 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Reset default margin */
+}
+
+#user-panel, #comments-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#username-container, #saved-username-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#username-input {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#saved-username {
+    font-weight: bold;
+    color: #ff8c00; /* Orange accent */
+}
+
+#comment-input {
+    width: calc(100% - 16px); /* Adjusted width to account for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* ... (previous code) */
+
+#image-input {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure inline-block display to apply padding */
+}
+
+#image-input:hover {
+    background-color: #f0f0f0;
+}
+
+.file-input-label {
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 34px; 
+background-color: #292929; /* Orange accent */
+    color: #ff8c00;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+/* Match the line height to vertically center with the input */
+}
+
+/* Hide the default file input button */
+#image-input[type="file"] {
+    display: none;
+}
+
+/* ... (remaining code) */
+#comments-list {
+    max-height: 300px; /* Set a maximum height for the comments list */
+    overflow-y: auto; /* Add a scrollbar when the content overflows vertically */
+}
+
+.comment {
+    background-color: #2d2d2d;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.comment img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #ff8c00; /* Orange accent */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
